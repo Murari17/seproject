@@ -1,0 +1,346 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+.atm-machine {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #333;
+  margin-bottom: 30px;
+}
+
+.login-container h1 {
+  color: #03dac6;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-container .instruction {
+  color: #b3b3b3;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.card-icon {
+  background-color: #03dac6;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 15px rgba(3, 218, 198, 0.4);
+}
+
+.card-icon svg {
+  width: 35px;
+  height: 35px;
+  stroke: #121212;
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #b3b3b3;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #252525;
+  color: #e0e0e0;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #03dac6;
+  box-shadow: 0 0 0 2px rgba(3, 218, 198, 0.2);
+}
+
+.card-input {
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.pin-input {
+  letter-spacing: 8px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #03dac6;
+  color: #121212;
+  border: none;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-btn:hover {
+  background-color: #00c4b4;
+  transform: translateY(-2px);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
+
+.login-btn:disabled {
+  background-color: #555;
+  color: #888;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.form-actions button {
+  flex: 1;
+}
+
+.cancel-btn {
+  background-color: #424242;
+  color: #e0e0e0;
+  border: none;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+  background-color: #505050;
+}
+
+.cancel-btn:disabled {
+  background-color: #333;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: rgba(207, 102, 121, 0.2);
+  color: #cf6679;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 20px 0 0;
+  text-align: center;
+  border-left: 4px solid #cf6679;
+}
+
+.admin-link {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.admin-link a {
+  color: #bb86fc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.admin-link a:hover {
+  color: #a56eff;
+  text-decoration: underline;
+}
+
+.atm-keypad-visual {
+  width: 100%;
+  max-width: 340px;
+  padding: 10px;
+}
+
+.keypad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.keypad-btn {
+  background-color: #333;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  height: 65px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.keypad-btn:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.keypad-btn:active {
+  transform: scale(0.96);
+  background-color: #555;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.keypad-btn.red {
+  background-color: #cf6679;
+  color: #121212;
+  border: 1px solid #bb5563;
+}
+
+.keypad-btn.red:hover {
+  background-color: #bb5563;
+}
+
+.keypad-btn.yellow {
+  background-color: #ffc107;
+  color: #121212;
+  border: 1px solid #e0a800;
+}
+
+.keypad-btn.yellow:hover {
+  background-color: #e0a800;
+}
+
+.keypad-btn.green {
+  background-color: #03dac6;
+  color: #121212;
+  border: 1px solid #00b5a3;
+}
+
+.keypad-btn.green:hover {
+  background-color: #00b5a3;
+}
+
+.pin-display {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.pin-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  border: 2px solid #555;
+  transition: all 0.2s ease;
+}
+
+.pin-dot.active {
+  background-color: #03dac6;
+  border-color: #03dac6;
+  box-shadow: 0 0 10px rgba(3, 218, 198, 0.6);
+}
+
+.keypad-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.keypad-btn:disabled:hover {
+  background-color: #333;
+  transform: none;
+}
+
+.keypad-btn:disabled:active {
+  transform: none;
+}
+
+.enter-btn {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 340px;
+  background-color: #03dac6;
+  color: #121212;
+  border: 1px solid #00b5a3;
+  height: 50px;
+}
+
+.enter-btn:hover {
+  background-color: #00b5a3;
+}
+
+@media (min-width: 768px) {
+  .login-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .atm-machine {
+    margin-bottom: 0;
+  }
+  
+  .atm-keypad-visual {
+    max-width: 380px;
+  }
+  
+  .keypad-btn {
+    height: 70px;
+    font-size: 24px;
+  }
+  
+  .enter-btn {
+    height: 60px;
+    max-width: 380px;
+  }
+}
+
+.atm-keypad-visual.active {
+  box-shadow: 0 0 20px rgba(3, 218, 198, 0.4);
+}
+
+.keypad-label {
+  text-align: center;
+  color: #b3b3b3;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

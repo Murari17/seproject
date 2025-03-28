@@ -1,0 +1,123 @@
+.admin-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .admin-login-container h1 {
+    color: #bb86fc;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .admin-login-container form {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid #333;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #b3b3b3;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #252525;
+    color: #e0e0e0;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #bb86fc;
+    box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.2);
+  }
+  
+  .login-btn {
+    width: 100%;
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .login-btn:hover {
+    background-color: #9966FF;
+    transform: translateY(-2px);
+  }
+  
+  .login-btn:active {
+    transform: translateY(0);
+  }
+  
+  .error-message {
+    background-color: rgba(207, 102, 121, 0.2);
+    color: #cf6679;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 20px 0 0;
+    text-align: center;
+    border-left: 4px solid #cf6679;
+  }
+  
+  .admin-system-text {
+    margin-top: 30px;
+    color: #b3b3b3;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .back-to-user {
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .back-to-user a {
+    color: #03dac6;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .back-to-user a:hover {
+    color: #00c4b4;
+    text-decoration: underline;
+  }
+  
+  .admin-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .admin-logo svg {
+    width: 60px;
+    height: 60px;
+    fill: #bb86fc;
+  }

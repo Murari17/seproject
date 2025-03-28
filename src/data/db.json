@@ -1,0 +1,118 @@
+{
+    "users": [
+      {
+        "id": "1",
+        "name": "Murari",
+        "accountNumber": "1000001",
+        "cardNumber": "4111111111111111",
+        "pin": "1234",
+        "balance": 2500.75,
+        "accountType": "checking",
+        "createdAt": "2023-05-15T10:30:00.000Z",
+        "updatedAt": "2025-03-10T14:20:00.000Z"
+      },
+      {
+        "id": "2",
+        "name": "Ansuman",
+        "accountNumber": "1000002",
+        "cardNumber": "5555555555554444",
+        "pin": "4321",
+        "balance": 4250.50,
+        "accountType": "savings",
+        "createdAt": "2023-06-22T09:15:00.000Z",
+        "updatedAt": "2025-03-12T11:45:00.000Z"
+      },
+      {
+        "id": "3",
+        "name": "Darshan",
+        "accountNumber": "1000003",
+        "cardNumber": "3782822463100005",
+        "pin": "5678",
+        "balance": 1750.25,
+        "accountType": "checking",
+        "createdAt": "2023-07-10T14:20:00.000Z",
+        "updatedAt": "2025-03-09T16:30:00.000Z"
+      },
+      {
+        "id": "4",
+        "name": "Gayatri",
+        "accountNumber": "1000004",
+        "cardNumber": "1234567890123456",
+        "pin": "6969",
+        "balance": 10.25,
+        "accountType": "savings",
+        "createdAt": "2024-07-10T14:20:00.000Z",
+        "updatedAt": "2025-03-09T16:30:00.000Z"
+      }
+    ],
+    "transactions": [
+      {
+        "id": "tx1",
+        "date": "2025-03-15T10:30:00.000Z",
+        "userId": "1",
+        "accountNumber": "1000001",
+        "userName": "Murari",
+        "type": "Deposit",
+        "amount": 500.00,
+        "transactionId": "TX12345",
+        "status": "Completed"
+      },
+      {
+        "id": "tx2",
+        "date": "2025-03-14T15:45:00.000Z",
+        "userId": "2",
+        "accountNumber": "1000002",
+        "userName": "Ansuman",
+        "type": "Withdrawal",
+        "amount": 100.00,
+        "transactionId": "TX12346",
+        "status": "Completed"
+      },
+      {
+        "id": "tx3",
+        "date": "2025-03-13T09:20:00.000Z",
+        "userId": "1",
+        "accountNumber": "1000001",
+        "userName": "Murari",
+        "type": "Transfer",
+        "amount": 200.00,
+        "toAccount": "1000002",
+        "transactionId": "TX12347",
+        "status": "Completed"
+      },
+      {
+        "id": "tx4",
+        "date": "2025-03-12T14:10:00.000Z",
+        "userId": "3",
+        "accountNumber": "1000003",
+        "userName": "Darshan",
+        "type": "Deposit",
+        "amount": 1000.00,
+        "transactionId": "TX12348",
+        "status": "Completed"
+      }
+    ],
+    "admins": [
+      {
+        "id": "admin1",
+        "username": "admin",
+        "password": "admin123",
+        "role": "administrator",
+        "lastLogin": "2025-03-14T08:30:00.000Z"
+      },
+      {
+        "id": "admin2",
+        "username": "supervisor",
+        "password": "super456",
+        "role": "supervisor",
+        "lastLogin": "2025-03-10T11:15:00.000Z"
+      }
+    ],
+    "systemInfo": {
+      "name": "Silicon Bank ATM System",
+      "version": "1.0.0",
+      "lastMaintenance": "2025-03-01T00:00:00.000Z",
+      "totalTransactions": 4,
+      "uptime": "15 days"
+    }
+  }
